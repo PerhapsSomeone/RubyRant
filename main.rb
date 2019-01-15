@@ -1,4 +1,4 @@
-#!/bin/ruby
+#!/usr/bin/ruby
 
 require 'uri'
 require 'http'
@@ -16,7 +16,7 @@ end
 
 def print_full_rant_from_json(rant)
   puts "\nCreated at: " + Time.at(rant['created_time']).to_s
-  puts rant['score'].to_s + ' ++'
+  puts rant['score'].to_s + '++'
   puts "Posted by #{rant["user_username"]} (#{rant["user_score"]} ++)\n"
 
   puts rant['text']
