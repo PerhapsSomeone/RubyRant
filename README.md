@@ -10,3 +10,5 @@ _____       _           _____             _
 ```
 
 RubyRant is a small, lightweight CLI client for devRant, written fully in Ruby.
+
+[![asciicast](https://asciinema.org/a/2YZvOiR7uRoVkMs09QPdCXWnT.svg)](https://asciinema.org/a/2YZvOiR7uRoVkMs09QPdCXWnT)
