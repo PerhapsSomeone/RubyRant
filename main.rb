@@ -1,5 +1,5 @@
-require 'net/https'
-require 'net/http'
+#!/bin/ruby
+
 require 'uri'
 require 'http'
 require 'json'
@@ -56,6 +56,12 @@ def event_loop
   end
 
   event_loop
+end
+
+File.open("logo.txt", "r") do |f|
+  f.each_line do |line|
+    puts line
+  end
 end
 
 puts "RubyRant v1.1\nWritten by PrivateGER\n\nPress ENTER for random rant."
