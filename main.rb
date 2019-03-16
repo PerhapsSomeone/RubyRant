@@ -42,7 +42,7 @@ def get_rant_by_id(id)
 end
 
 def event_loop
-  print "[(r)andom / j(oke/meme) / q(uestion)] $ "
+  print "[(r)andom / j(oke/meme) / q(uestion) / e(xit)] $ "
   input = gets.chomp
   
   if input === ''
@@ -53,6 +53,8 @@ def event_loop
     print_full_rant_from_json(get_rant_by_category("joke/meme"))
   elsif input === 'q'
     print_full_rant_from_json(get_rant_by_category("question"))
+  elsif input === 'e'
+    exit 1
   end
 
   event_loop
